@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Grenze Gotisch', serif;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.login-form {
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+    background: #F0F0F0;
+    z-index: 0;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.login-form h1 {
+    color: #4682b4;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-form h2 {
+    line-height: 40px;
+    margin-bottom: 5px;
+    color: #4682b4;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Grenze Gotisch', serif;
+    font-weight: 500;
+}
+
+.login-form .main {
+    position: relative;
+    display: flex;
+    margin: 30px 0;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    flex-basis: 50%;
+    padding: 3em;
+    background: #fff;
+    border-radius: 10px 0 0 10px;
+}
+
+.form-img {
+    flex-basis: 50%;
+    background: #4682b4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 10px 10px 0;
+}
+
+.form-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0 10px 10px 0;
+}
+
+.content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+
+.content input:focus {
+    outline: none;
+    border-color: #4682b4;
+    box-shadow: 0 0 5px rgba(70, 130, 180, 0.5);
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: #4682b4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: 'Grenze Gotisch', serif;
+}
+
+.btn:hover {
+    background: #366b91;
+}
+
+.content p {
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+}
+
+.content a {
+    color: #4682b4;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
