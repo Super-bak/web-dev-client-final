@@ -620,7 +620,7 @@ const AdminProducts = () => {
                 <TableCell>Image</TableCell>
                 <TableCell>Name</TableCell>
                 <TableCell>Price</TableCell>
-                <TableCell>Categories</TableCell>
+                <TableCell size='medium'>Categories</TableCell>
                 <TableCell>Variants</TableCell>
                 <TableCell>Actions</TableCell>
               </TableRow>
@@ -656,7 +656,7 @@ const AdminProducts = () => {
                   <TableCell>
                     {product.base_price ? `$${Number(product.base_price).toFixed(2)}` : 'N/A'}
                   </TableCell>
-                  <TableCell>
+                  <TableCell >
                     {Array.isArray(product.categories) 
                       ? product.categories.map(cat => cat.name).join(', ')
                       : product.category_id 

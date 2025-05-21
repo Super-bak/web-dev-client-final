@@ -19,6 +19,7 @@ import AdminProtectedRoute from './components/AdminProtectedRoute';
 import { WishlistProvider } from './context/WishlistContext';
 import { AuthProvider } from './context/AuthContext';
 import { CartProvider } from './context/CartContext';
+import NotFound from './pages/NotFound';
 import './App.css';
 
 const theme = createTheme({
@@ -149,6 +150,8 @@ function App() {
                 </main>
                 <Footer />
               </div>
+              <Route path="*" element={<NotFound />} />
+
             </Router>
           </WishlistProvider>
         </CartProvider>

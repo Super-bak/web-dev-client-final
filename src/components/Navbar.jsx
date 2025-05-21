@@ -78,9 +78,11 @@ const Navbar = () => {
     setAnchorElUser(null);
   };
 
-  const handleLogout = () => {
-    logout();
-    // Additional cleanup if needed
+  const navigate = useNavigate();
+
+  const handleLogout = async  () => {
+    await logout();
+    navigate('/');
   };
 
   return (
