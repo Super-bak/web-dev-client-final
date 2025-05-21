@@ -1,5 +1,6 @@
-import { Container, Grid, Typography, Link, Box } from '@mui/material';
+import { Container, Grid, Typography, Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import { Link } from 'react-router-dom';
 
 const FooterContainer = styled('footer')(({ theme }) => ({
   backgroundColor: theme.palette.primary.main,
@@ -28,15 +29,15 @@ const Footer = () => {
               <Typography variant="body2">
                 Premium products, curated for you.
               </Typography>
-            </Grid>
             <Grid item xs={12} sm={6} md={3}>
               <Typography variant="h6" gutterBottom>
                 Links
               </Typography>
-              <Link href="/" color="inherit" display="block">Home</Link>
-              <Link href="/products" color="inherit" display="block">Products</Link>
-              <Link href="/categories" color="inherit" display="block">Categories</Link>
-              <Link href="/about" color="inherit" display="block">About</Link>
+              <Link to="/" style={{ color: 'inherit', display: 'block' }}>Home</Link>
+              <Link to="/products" style={{ color: 'inherit', display: 'block' }}>Products</Link>
+              <Link to="/categories" style={{ color: 'inherit', display: 'block' }}>Categories</Link>
+              <Link to="/about" style={{ color: 'inherit', display: 'block' }}>About</Link>
+            </Grid>
             </Grid>
             <Grid item xs={12} sm={6} md={3}>
               <Typography variant="h6" gutterBottom>
