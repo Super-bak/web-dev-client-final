@@ -39,6 +39,7 @@ const Home = () => {
     const fetchFeaturedProducts = async () => {
       try {
         setLoading(true);
+        console.log('API URL:', `${import.meta.env.VITE_API_BASE_URL}/api/products/featured`);
         const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/api/products/featured`);
         setFeaturedProducts(response.data.data || []);
         setError(null);
