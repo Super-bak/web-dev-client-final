@@ -146,11 +146,11 @@ function App() {
                         </AdminProtectedRoute>
                       } 
                     />
+                    <Route path="*" element={<NotFound />} />
                   </Routes>
                 </main>
                 <Footer />
               </div>
-              <Route path="*" element={<NotFound />} />
 
             </Router>
           </WishlistProvider>
