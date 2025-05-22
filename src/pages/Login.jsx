@@ -60,7 +60,7 @@ const Login = () => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            width: '30%',
+            width: { xs: '100%', sm: '80%', md: '60%', lg: '50%' },
           }}
         >
           <Typography component="h1" variant="h5">
